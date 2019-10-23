@@ -35,9 +35,10 @@ header{
     width: 4%;
     top:12%;
     left: 35.5%;
+    cursor: pointer;
 }
 .logo{
-    margin-left: 20%;
+    margin-left: 25%;
 }
 .logo-box{
     width: 50%;
