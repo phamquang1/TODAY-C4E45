@@ -10,6 +10,12 @@ body {
     font-size: 20px;
     line-height: 1.7;
     color: #777777;
+
+}
+.clear::after{
+    content: "";
+    clear: both;
+    display: table;
 }
 header{
     background-image: linear-gradient( to top left, rgba(58, 83, 245, 0.7),rgba(240,240,12,0.7)), url(../jmg/index.png);
@@ -39,24 +45,131 @@ header{
 .input-logo:active{
     transform: translateY(-1.5px);
 }
-.logo{
-    margin-left: 25%;
+/* -----------felll left---- */
+.section-feel{
     position: relative;
 }
-.logo-box{
-    width: 50%;
+.section-feel-text{
+    width: 35%;
+    top: 0;
+    left: 30%;
+    position: absolute;
+    display: inline-block;
+}
+.section-feel-icon{
+    width: 40%;
+    top: 0;
+    right: 0;
+    filter: brightness(110%);
+    animation: icon 2s linear;
+    position: absolute;
+    display: inline-block;
+}
+/* felll left-1 */
+.section-feel-1{
+    position: relative;
+}
+.section-feel-text-1{
+    width: 120%;
+    top:90px;
+    position: absolute;
+    display: inline-block;
+}
+.section-feel-icon-1{
+    width: 80%;
+    top: 250px;
+    left: 30px;
+    filter: brightness(110%);
+    animation: icon1 2s linear;
+    position: absolute;
+    display: inline-block;
+}
+/* ----feel-right */
+.section-feel-text-3{
+    width: 45%;
+    left: 35%;
+    position: absolute;
+}
+.section-feel-icon-3{
+    width: 45%;
+    left: 0px;
+    filter: brightness(110%);
+    animation: icon 2s linear;
+    position: absolute;
+    display: inline-block;
+}
+/* ---fell right-4 */
+.section-feel-icon-4{
+    width: 80%;
+    top: 320px;
+    left: 0px;
+    filter: brightness(110%);
+    animation: icon1 2s linear;
+    position: absolute;
+    display: inline-block;
+}
+.section-feel-text-4{
+    width: 90%;
+    top: 150px;
+    left: 0px;
+    position: absolute;
+}
+/* ---feel right-5--- */
+.section-feel-text-5{
+    width: 100%;
+    top: 100px;
+    position: absolute;
+}
+.section-feel-icon-5{
+    width: 90%;
+    top: 250px;
+    filter: brightness(110%);
+    position: absolute;
+}
+
+/* -----felll center */
+.section-logo{
+    position: relative;
+}
+.section-logo-img{
+    width: 90%;
     animation-name: logo;
-    animation-duration: 1.2s;
+    animation-duration: 2s;
     animation-iteration-count: infinite;
-    animation-direction: alternate;
     animation-timing-function: linear;
+    animation-direction: alternate;
+}
+.section-feel-icon-6{
+    width: 80%;
+    position: absolute;
+    top: 63%;
+    right: 10%;
+    filter: brightness(110%);
 }
 @keyframes logo{
     0%{
-        transform: translateX(0);
+        transform: translateX(-10px);
     }
     100%{
-        transform: translateX(9px);
+        transform: translateX(10px);
     }
 }
-/* -----fell----------------------------- */
+@keyframes icon{
+    0%{
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+@keyframes icon1{
+    0%{
+        transform: rotate(360deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+
