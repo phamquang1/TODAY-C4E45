@@ -1,0 +1,160 @@
+/* 
+
+COLORS:
+light blue: #8e9efc
+medium blue:#5a73fc
+dark blue:#1c3eff
+
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.7;
+    color: #777777;
+
+}
+header{
+    background-image: linear-gradient(to right bottom ,rgba(142,158,252,0.8),rgba(28,62,255,0.8)) ,url(../img/background1.jpg);
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    height: 95vh;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+
+}
+.text-box{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.logo{
+    height: 70px;
+    position: relative;
+    animation-name: logo;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate  ;
+}
+.logo-box{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+
+.heading-pri{
+    font-weight: bold;
+    font-size: 120% ;
+    color: aliceblue;
+    text-transform: uppercase;
+    animation-name: animationtest;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+}
+.heading-span1{
+    display: block;
+    font-size: 180%;
+    font-weight: 400;
+    letter-spacing: 18px;
+}
+.heading-span2{
+    display: block;
+    font-size: 140%;
+    font-weight: 400;
+    letter-spacing: 16px;
+}
+.btn,
+.btn:link,
+.btn:visited{
+    padding: 5px;
+    display: inline-block;
+    width: 40%;
+    margin-top: 25px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 130%;
+    border-radius: 25px;
+    margin-left: 20%;
+    text-transform: uppercase;
+    position: relative;
+}
+.btn-a{
+    animation-name: btn-a;
+    animation-duration: 2s;
+}
+
+.btn-white{
+    background: white;
+}
+.btn:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 5px 20px rgba(0,0,0,.9);
+}
+.btn:active{
+    outline:none;
+    transform: translateY(-1px);
+    box-shadow: 0 5px 25px rgba(0,0,0,.9);
+
+}
+.btn::after{
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left: 0;
+    z-index:-1;  
+}
+.btn-white::after{
+    background: white;
+    border-radius:25px ;
+}
+.btn:hover::after{
+    transform: scaleX(1.3) scaleY(1.6);
+    transition: all .7s ;
+    opacity: 0;
+}
+@keyframes animationtest{
+    0%{
+        opacity: 0;
+        transform: translate(0,-100px);
+    }
+    75%{
+        transform: translate(0,-25px);
+    }
+    100%{
+        transform: translate(0,0);
+    }
+}
+@keyframes logo{
+    0%{
+        transform: rotate(0);
+
+    }
+    100%{
+        transform: rotate(360deg);
+        transform: translateX(-15px);
+    }
+}
+@keyframes btn-a{
+    0%{
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}

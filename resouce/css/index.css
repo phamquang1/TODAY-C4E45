@@ -37,6 +37,9 @@ header{
     left: 35.5%;
     cursor: pointer;
 }
+.input-logo:active{
+    transform: translateY(-1.5px);
+}
 .logo{
     margin-left: 25%;
     position: relative;
@@ -60,7 +63,7 @@ header{
 /* -----fell----------------------------- */
 .fell{
     position: absolute;
-    top:5%;
+    top:3%;
     left: -13%;
 }
 .fell-1{
@@ -68,8 +71,18 @@ header{
     animation-name: fell;
     animation-duration: 1s;
     animation-iteration-count: 1;
-    /* animation-timing-function: linear; */
+    position: relative;
 }
+.fell-text{
+    position: absolute;
+    top:-5%;
+    left: -14%;
+    display:inline-block;
+}
+.fell-1a{
+    width: 10%;
+    margin-left: -9%;
+} 
 .fell-tranform:hover{
     transform: translateY(-5px);
 }
@@ -85,3 +98,4 @@ header{
         transform: translateY(0);
     }
 }
+.
