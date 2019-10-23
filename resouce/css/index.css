@@ -65,6 +65,13 @@ header{
     position: absolute;
     display: inline-block;
 }
+.section-feel-icon:hover{
+    transform: translateY(-10px);
+}
+.section-feel-icon:active{
+    transform: translateY(-2px);
+}
+
 /* felll left-1 */
 .section-feel-1{
     position: relative;
@@ -84,6 +91,12 @@ header{
     position: absolute;
     display: inline-block;
 }
+.section-feel-icon-1:hover{
+    transform: translateY(-10px);
+}
+.section-feel-icon-1:active{
+    transform: translateY(-2px);
+}
 /* ----feel-right */
 .section-feel-text-3{
     width: 45%;
@@ -98,6 +111,12 @@ header{
     position: absolute;
     display: inline-block;
 }
+.section-feel-icon-3:hover{
+    transform: translateY(-10px);
+}
+.section-feel-icon-3:active{
+    transform: translateY(-2px);
+}
 /* ---fell right-4 */
 .section-feel-icon-4{
     width: 80%;
@@ -107,6 +126,12 @@ header{
     animation: icon1 2s linear;
     position: absolute;
     display: inline-block;
+}
+.section-feel-icon-4:hover{
+    transform: translateY(-10px);
+}
+.section-feel-icon-4:active{
+    transform: translateY(-2px);
 }
 .section-feel-text-4{
     width: 90%;
@@ -125,6 +150,12 @@ header{
     top: 250px;
     filter: brightness(110%);
     position: absolute;
+}
+.section-feel-icon-5:hover{
+    transform: translateY(-10px);
+}
+.section-feel-icon-5:active{
+    transform: translateY(-2px);
 }
 
 /* -----felll center */
@@ -145,6 +176,12 @@ header{
     top: 63%;
     right: 10%;
     filter: brightness(110%);
+}
+.section-feel-icon-6:hover{
+    transform: translateY(-10px);
+}
+.section-feel-icon-6:active{
+    transform: translateY(-2px);
 }
 @keyframes logo{
     0%{
