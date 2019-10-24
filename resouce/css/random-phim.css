@@ -34,6 +34,12 @@ header{
     position: absolute;
     width: 10%;
     display: inline-block;
+    animation-name: logo;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
 }
 .header-text{
     width: 400px;
@@ -62,11 +68,13 @@ section{
     width: 25%;
     box-shadow: 0 2px 2px 6px black;
     border-radius: 15px;
+    transition: all 0.24s;
     position: absolute;
     z-index: 10;
 }
 .section-main:hover{
     transform: scale(1.2);
+    z-index: 20;
 }
 .section-main:active{
     transform: translateY(4px);
@@ -93,4 +101,30 @@ section{
 .section-img-5{
     left: 55%;
     top: 60px;
+}
+.section-text{
+    width: 15%;
+    height: 40px;
+    background: goldenrod;
+    padding: 5px;
+    text-align: center;
+    color: black;
+    font-weight: 700;
+    border-radius: 15px;
+    box-shadow: 2px 6px 2px black;
+    display: inline-block;
+    position: absolute;
+    left: 110%;
+    top: 450px;
+}
+.section-text:active{
+    transform: translateY(2px);
+}
+@keyframes logo{
+    0%{
+        transform: translateX(6px);
+    }
+    100%{
+        transform: translateX(-5px);
+    }
 }
