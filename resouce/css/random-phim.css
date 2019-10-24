@@ -27,7 +27,7 @@ body {
 /* -----header---- */
 header{
     position: relative;
-    margin-bottom: 100px;
+    margin-bottom: 40px;
     margin-top: 50px;
 }
 .header-logo{
@@ -128,3 +128,4 @@ section{
         transform: translateX(-5px);
     }
 }
+/* ------section-phim */
