@@ -13,7 +13,7 @@ body {
     position: relative;
 }
 #body{
-    background: linear-gradient(to left top ,rgba(20, 16, 228, 0.7),rgba(1, 0, 2, 0.918)),url(../jmg/smile-1.jpg);
+    background: linear-gradient(to left top ,rgba(0,0,0,.7),rgba(83, 8, 223, 0.3)),url(../jmg/bigbang-fantastic-baby.jpg);
     height: 100vh;
     background-size: cover;
     position: relative;
@@ -39,28 +39,25 @@ header{
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-direction: alternate;
+
 }
 .header-text{
-    width: 400px;
+    width: 420px;
     height: 100px;
     left: 35%;
-    background: linear-gradient(to right top , rgba(17, 136, 240,0.8), rgba(202, 255 ,112,0.7));
+    background: rgb(240,248,255);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 47% 78%, 27% 100%, 28% 73%, 0 72%);
     font-size: 120%;
     font-weight: 700;
     text-align: center;
-    line-height: 100px;
+    line-height: 65px;
     color: black;
     border-radius: 25px;
-    border: 2px solid yellowgreen;
     position: relative;
 }
-@keyframes logo{
-    0%{
-        transform: translateX(6px);
-    }
-    100%{
-        transform: translateX(-5px);
-    }
+.header-img{
+    width: 9%;
+    margin: 5px;
 }
 /* ------section---- */
 section{
@@ -71,17 +68,35 @@ section{
     position: relative;
 
 }
-.section-nhac{
-    position: relative;
-    height: 550px;
+.section-main{
+    width: 25%;
+    box-shadow: 0 2px 2px 6px black;
+    border-radius: 15px;
+    transition: all 0.24s;
+    position: absolute;
+    z-index: 10;
 }
-.section-nhac iframe,
-.section-nhac img{
-    box-shadow: 5px 0px 10px 5px green;
-    margin-bottom: 15px;
+.section-main:hover{
+    transform: scale(1.1);
+    z-index: 20;
+}
+.section-main:active{
+    transform: translateY(2px);
+}
+.section-img-1{
+    left: 0;
+    top: 0px;
+}
+.section-img-2{
+    left: 73%;
+    top: 0px;
+}
+.section-img-3{
+    left: 35%;
+    top: 0px;
 }
 .section-text{
-    width: 25%;
+    width: 15%;
     height: 40px;
     background: goldenrod;
     padding: 5px;
@@ -92,13 +107,17 @@ section{
     box-shadow: 2px 6px 2px black;
     display: inline-block;
     position: absolute;
-    left: 220%;
+    left: 110%;
     top: 450px;
 }
 .section-text:active{
     transform: translateY(2px);
 }
-.section-nhac img:hover,
-.section-nhac iframe:hover{
-    transform: translateY(1px);
+@keyframes logo{
+    0%{
+        transform: translateX(6px);
+    }
+    100%{
+        transform: translateX(-5px);
+    }
 }
