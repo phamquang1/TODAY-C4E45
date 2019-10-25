@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.7;
+    color: #777777;
+    position: relative;
+}
+#body{
+    background: linear-gradient(to left top ,rgba(3, 117, 50, 0.6),rgba(161, 95, 228, 0.18)),url(../jmg/phim-3.jpg);
+    height: 100vh;
+    background-size: cover;
+    position: relative;
+}
+
+.clear::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+/* -----header---- */
+header{
+    position: relative;
+    margin-bottom: 40px;
+    margin-top: 50px;
+}
+.header-logo{
+    position: absolute;
+    width: 10%;
+    display: inline-block;
+    animation-name: logo;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes logo{
+    0%{
+        transform: translateX(6px);
+    }
+    100%{
+        transform: translateX(-5px);
+    }
+}
+/* -----section--- */
+#section{
+    margin: 0 20%;
+    top: 15%;
+    position: relative;
+
+}
+.section-img{
+    width: 935px;
+    height: 550px;
+}
+.section-text ,
+.section-text-1,
+.section-text-2{
+    background: goldenrod;
+    padding: 5px;
+    text-align: center;
+    color: black;
+    font-weight: 700;
+    box-shadow: 2px 6px 2px black;
+    display: inline-block;
+    position: absolute;
+}
+.section-text{
+    width: 10%;
+    height: 50px;
+    border-radius: 45%;
+    left: 102%;
+}
+.section-text:hover{
+    transform: translateY(-2px);
+}
+.section-text:active{
+    transform: translateY(1px);
+}
+.section-text-1{
+    width: 15%;
+    height: 60px;
+    top: 500px;
+    left: 108%;
+    line-height: 50px;
+    clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);
+}
+.section-text-1:active{
+    transform: translateY(1px);
+}
+.section-text-2{
+    left: 102%;
+    height: 100px;
+    width: 30%;
+    top: 300px;
+    line-height: 30px;
+    color: rgb(236, 245, 237);
+    background: rgb(221, 61, 101);
+    clip-path: polygon(20% 0%, 0% 20%, 19% 49%, 0% 80%, 20% 100%, 49% 93%, 80% 100%, 100% 80%, 82% 51%, 100% 20%, 80% 0%, 49% 7%);
+}
+.section-img{
+    border-radius: 15px;
+    box-shadow: 0px 2px 2px 5px green;
+}
