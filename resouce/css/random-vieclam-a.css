@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.7;
+    color: #777777;
+    position: relative;
+}
+
+#body {
+    background: linear-gradient(to right top, rgba(189, 248, 27, 0.2), rgba(36, 248, 82, 0.3)), url(../jmg/job-2.jpg);
+    height: 100vh;
+    background-size: cover;
+    position: relative;
+}
+
+.clear {
+    clear: both;
+}
+
+/* -----header---- */
+
+header {
+    position: relative;
+    margin-bottom: 40px;
+    margin-top: 50px;
+}
+
+.header-logo {
+    position: absolute;
+    width: 10%;
+    display: inline-block;
+    animation-name: logo;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.header-text {
+    width: 420px;
+    height: 80px;
+    left: 35%;
+    background: rgb(240, 248, 255);
+    font-weight: 700;
+    text-align: center;
+    line-height: 65px;
+    color: black;
+    border-radius: 25px;
+    position: relative;
+    font-size: 140%;
+}
+
+.header-img {
+    width: 9%;
+    margin: 5px;
+}
+
+@keyframes logo {
+    0% {
+        transform: translateX(6px);
+    }
+    100% {
+        transform: translateX(-5px);
+    }
+}
+
+/* -----------section--- */
+
+section {
+    margin: 0 20%;
+    position: relative;
+}
+
+.section-heading {
+    margin: 0 20%;
+    font-size: 150%;
+    color: black;
+}
+.section-heading img{
+    position: absolute;
+    width: 45%;
+    left: -40%;
+    top: 10%;
+}
+.section-box{
+    height: 550px;
+    border-right-color: black;
+}
+section p{
+    color: rgba(15, 15, 15,1);
+    margin-bottom: 7px;
+}
+.section-btn {
+    position: absolute;
+    width: 60px;
+    height: 30px;
+    background: orangered;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0px 2px 3px 5px black;
+    left: 105%;
+    top: 80%;
+}
+
+.section-btn:hover {
+    transform: translateY(-3px);
+}
+
+.section-btn:active {
+    transform: translateY(2px);
+}
+
+.section-inform {
+    width: 90%;
+    height: 300px;
+    background: plum;
+    border-radius: 15px;
+}
