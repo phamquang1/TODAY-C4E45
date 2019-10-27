@@ -1,67 +1,24 @@
 let a = document.getElementsByClassName("section-btn-no");
+let b = document.getElementsByClassName("section-btn-yes");
+let dem = 0;
+let dem1 = 0;
 a[0].addEventListener("click", function () {
-    let dem = 0;
-    if (dem == 0) {
-        document.getElementById("id").innerHTML = `${
-            <div class="row">
-                <div class="col span-1-of-2">
-                    <div class="tenor-gif-embed" data-postid="14884533" data-share-method="host" data-width="100%"
-                        data-aspect-ratio="1.7785714285714287">
-                        <a href="https://tenor.com/view/tr%e1%ba%a7n-d%e1%ba%a7n-gif-14884533">
-                            Trần Dần GIF
-                </a> from
-                <a href="https://tenor.com/search/tr%E1%BA%A7n-gifs">
-                            Trần GIFs
-                </a>
-                    </div>
-                    <div class="tenor-gif-embed" data-postid="14884533" data-share-method="host" data-width="100%"
-                        data-aspect-ratio="1.7785714285714287">
-                        <a href="https://tenor.com/view/tr%e1%ba%a7n-d%e1%ba%a7n-gif-14884533">
-                            Trần Dần GIF
-                </a> from
-                <a href="https://tenor.com/search/tr%E1%BA%A7n-gifs">
-                            Trần GIFs
-                </a>
-                    </div>
-                </div>
-                <div class="col span-1-of-2">
-                    <div class="tenor-gif-embed" data-postid="14884533" data-share-method="host" data-width="100%"
-                        data-aspect-ratio="1.7785714285714287">
-                        <a href="https://tenor.com/view/tr%e1%ba%a7n-d%e1%ba%a7n-gif-14884533">
-                            Trần Dần GIF
-                </a> from
-                <a href="https://tenor.com/search/tr%E1%BA%A7n-gifs">
-                            Trần GIFs
-                </a>
-                    </div>
-                    <div class="tenor-gif-embed" data-postid="14884533" data-share-method="host" data-width="100%"
-                        data-aspect-ratio="1.7785714285714287">
-                        <a href="https://tenor.com/view/tr%e1%ba%a7n-d%e1%ba%a7n-gif-14884533">
-                            Trần Dần GIF
-                </a> from
-                <a href="https://tenor.com/search/tr%E1%BA%A7n-gifs">
-                            Trần GIFs
-                </a>
-                    </div>
-                </div>
-            </div>
-            }`
+    if (dem === 0) {
+        document.getElementById('1-gif').style.display = 'none';
+        document.getElementById('4-gifs').style.display = 'block';
+        document.getElementById('2-gifs').style.display = 'none' ;
         dem = 1;
     }
-    if (dem == 1) {
+    else if (dem === 1) {
+        document.getElementById('1-gif').style.display = 'block';
+        document.getElementById('4-gifs').style.display = 'none';
+        document.getElementById('2-gifs').style.display = 'none' ;
         dem = 0;
-        document.getElementById("id").innerHTML = `${
-            <div class="tenor-gif-embed" data-postid="14884533" data-share-method="host" data-width="100%"
-                data-aspect-ratio="1.7785714285714287">
-                <a href="https://tenor.com/view/tr%e1%ba%a7n-d%e1%ba%a7n-gif-14884533">
-                    Trần Dần GIF
-        </a> from
-        <a href="https://tenor.com/search/tr%E1%BA%A7n-gifs">
-                    Trần GIFs
-        </a>
-            </div>
-            }`
-
     }
-
+});
+b[0].addEventListener("click", function () {
+    document.getElementById('2-gifs').style.display = 'block' ;
+    document.getElementById('ok').style.display = 'block';
+    document.getElementById('1-gif').style.display = 'none' ;
+    document.getElementById('4-gifs').style.display = 'none';
 });
