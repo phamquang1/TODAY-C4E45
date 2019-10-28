@@ -1,6 +1,8 @@
 const keywords = [
     {
-        content: ['buon', 'buồn', 'bùn', 'bun', 'pun', 'pùn', 'puồn', 'bad','nản','nan'],
+        content: ['buon', 'buồn', 'bùn', 'bun', 'pun', 'pùn', 'puồn', 'bad','nản','nan',
+                'chán','chan','mệt','không biết lamg gì','khong biet lam gi','tự kỉ','tu ki',
+                'khóc','khoc','cười','cuoi','nở hoa','no hoa'],
         link: ['resouce/html-random-789/random-13.html',
             'resouce/html-random-789/random-10%20-nhac.html',
             'resouce/html-random-789/random-14.html',
@@ -20,7 +22,16 @@ const keywords = [
             'random-7.html',
             'random-10%20-nhac.html',
             'random-10%20-nhac.html',
-            'random-10.html']
+            'random-10.html'],
+        link2:['../html-random-789/random-10.html',
+                '../html-random-789/random-9.html',
+                '../html-random-789/random-7.html',
+                '../html-random-789/random-10.html',
+                'random-4-a.html',
+                'random-4.html',
+                '../html-random-789/random-10.html',
+                'random-5.html',
+                '../html-random-789/random-10.html']
     },
     {
         content: ['vui', 'sướng', 'yeu doi'],
