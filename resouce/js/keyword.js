@@ -35,7 +35,9 @@ const keywords = [
         'resouce/html-random-789/random-13.html']
     },
     {
-        content: ['that tinh', 'thất tình', 'thattinh'],
+        content: ['that tinh', 'thất tình', 'thattinh','cô đơn','co don',
+                'fa','only','lẻ loi','le loi','mot minh','một mình',
+                '1 minh','1 mk','1 mh'],
         link: ['resouce/html-random-456/random-4.html',
         'resouce/html-random-456/random-5.html',
         'resouce/html-random-789/random-7.html',
