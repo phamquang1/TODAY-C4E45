@@ -93,7 +93,7 @@ section{
     display: inline-block;
     position: absolute;
     left: 220%;
-    top: 450px;
+    top: 500px;
 }
 .section-text:active{
     transform: translateY(2px);
