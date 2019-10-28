@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.7;
+    color: #777777;
+}
+#body{
+    background: linear-gradient(to left top ,rgba(0,0,0,.7),rgba(83, 8, 223, 0.3)),url(../../jmg/phong-tap-gym-hoi-an-4.png);
+    height: 100vh;
+    background-size: cover;
+    position: relative;
+}
+
+.clear::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+/* ---ơ-header---- */
+header{
+    position: relative;
+}
+.header-logo{
+    position: absolute;
+    width: 15%;
+    top: 90%;
+
+}
+.header-text{
+    position: absolute;
+    width: 500px;
+    height: 50px;
+    background: chartreuse;
+    border-radius: 15px;
+    top: 100px;
+    left: 37%;
+    text-align: center;
+    font-size: 130%;
+    font-weight: 700;
+    box-shadow: 0px 2px 3px 4px plum;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+}
+section{
+    margin: 0 20%;
+    height: 100vh;
+    padding-top: 15%;
+}
+.section-main{
+  position: relative;
+}
+.section-main-img{
+    width: 80%;
+    border-radius: 15px;
+    margin-left: 30px;
+    box-shadow: 0px 2px 2px 3px black;
+    margin-bottom: 120px;
+}
+.section-main-img:hover{
+    transform: translateY(-3px);
+}
+.section-main-img:active{
+    transform: translateY(3px);
+}
+.section-btn{
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    background: yellow;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 120%;
+    font-weight: 700;
+    top: 90%;
+    left: 90%;
+    box-shadow: 0px 2px 3px 5px blue;
+}
+.section-btn:hover{
+    transform: translateY(-3px);
+    background: #ff0000;
+    color: #ffffff;
+}
+.section-btn:active{
+    transform: translateY(3px);
+}
+.p1{
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 20px; 
+    color: black;
+    text-align: center;
+    border-radius: 15px;
+    background: yellow;
+    box-shadow: 0px 2px 3px 5px blue;
+}
+.p2{
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: black;
+    text-align: center;
+    border-radius: 15px;
+    background: yellow;
+    box-shadow: 0px 2px 3px 5px blue;
+}
+.p3{
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    color: black;
+    border-radius: 15px;
+    background: yellow;
+    box-shadow: 0px 2px 3px 5px blue;
+}
+.p1:hover{
+    background: #ff0000;
+    color: #ffffff;
+}
+.p2:hover{
+    background: #ff0000;
+    color: #ffffff;
+}
+.p3:hover{
+    background: #ff0000;
+    color: #ffffff;
+}
+
