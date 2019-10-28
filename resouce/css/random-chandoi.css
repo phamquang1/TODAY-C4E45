@@ -81,14 +81,14 @@ section {
 }
 .section-btn {
     position: absolute;
-    width: 120px;
+    width: 180px;
     height: 30px;
     background: olive;
     text-align: center;
     border-radius: 15px;
     box-shadow: 0px 2px 3px 5px black;
     top: 100%;
-    left: 115%;
+    left: 110%;
 }
 .section-btn-yes ,
 .section-btn-no{
