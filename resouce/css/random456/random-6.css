@@ -68,6 +68,27 @@ section{
 .section-main-img:active{
     transform: translateY(3px);
 }
+.section-btn{
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    background: yellow;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 120%;
+    font-weight: 700;
+    top: 90%;
+    left: 90%;
+    box-shadow: 0px 2px 3px 5px blue;
+}
+.section-btn:hover{
+    transform: translateY(-3px);
+    background: #ff0000;
+    color: #ffffff;
+}
+.section-btn:active{
+    transform: translateY(3px);
+}
 .p1{
     font-family: "Lato", sans-serif;
     font-weight: 400;
