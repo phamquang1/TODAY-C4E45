@@ -131,4 +131,7 @@ section{
     background: #ff0000;
     color: #ffffff;
 }
+a{
+    text-decoration: none;
+}
 
